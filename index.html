@@ -11,10 +11,14 @@
   <header>
     <h1>Welcome to Our Estate</h1>
     <nav>
+      <div class="logo">Estate Name</div>
+      <ul class="nav-links">
         <a href="#hero">Home</a>
         <a href="#projects">Projects</a>
         <a href="#apply">Apply</a>
-        <a href="#contact">Contact</a>
+        <a href="#donate">Donate</a>
+        <a href="#feedback">Feedback</a>
+      </ul>
     </nav>
   </header>
 
@@ -22,16 +26,96 @@
     <section id="hero">
       <h2>Your dream community</h2>
       <p>Peaceful living, strong community.</p>
+      <a href="#about" class="cta-button>Learn More</a> 
     </section>
-    <section id="projects">
-        <h2>Our Projects</h2>
-        <p>Completed, ongoing, and proposed projects will be displayed here.</p>
+    
+    <section id="about">
+        <h2>About Estate</h2>
+        <p>Established in [Year], [Estate Name] is a thriving residential community focused on safety, development, and modern living. Our mission is to provide a peaceful and secure environment for families and professionals alike.</p>
     </section>
       
-    <section id="apply">
-        <h2>Apply to Be a Tenant</h2>
-        <p>Fill out the application form to be considered for tenancy.</p>
+    <section id="projects">
+        <h2>Estate Projects</h2>
+        <div class="project-category">
+          <h3>Ongoing Projects</h3>
+          <ul>
+            <li>Community Park</li>
+            <li>New Housing Development</li>
+            <li>Road Improvement</li>
+          </ul>
+        </div>
+        <div class="project-category"></div>
+          <h3>Completed Projects</h3>
+          <ul>
+            <li>Perimeter Fencing</li>
+            <li>Health center</li>
+            <li>Water drainage system</li>
+          </ul>
+        </div>
+        <div class="project-category">
+          <h3>Upcoming Projects</h3>
+          <ul>
+            <li>Community Center</li>
+            <li>Park Development</li>
+            <li>Road Expansion</li>
+          </ul>
+
+        </div>
     </section>
+
+    <section id="apply">
+      <h2>Apply to Be a Tenant</h2>
+      <p>Fill out the application form to be considered for tenancy.</p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="reason">Why do you want to leave your old house></label>
+        <textarea id="reason" name="reason" required></textarea>
+
+        <label for="landlord-phone">Previous landlord number</label>
+        <input type="tel" id="landlord-phone" name="landlord-phone" required>
+
+        <label for="current-address">Current Address:</label>
+        <input type="text" id="current-address" name="current-address" required> 
+
+        <label for="income">Monthly Income:</label>
+        <input type="number" id="income" name="income" required>
+
+        <label for="employment">Employment Status:</label>
+        <input
+        
+        <button type="submit">Submit Application</button>
+      </form>
+  </section>
+
+  <section id="donate">
+    <h2>Donate to Our Cause</h2>
+    <p>Your contributions help us maintain and improve our community.</p>
+    <a href="#donate" class="cta-button">Donate Now</a>
+  </section>
+
+  <section id="feedback">
+    <h2>We value your feedback</h2>
+    <form>
+      <label for="fullname">Your Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Feedback</button>
+    </form>
+  </section>
       
   </main>
 
